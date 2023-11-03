@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Afpa</title>
+</head>
+
+<body>
+
+    <!-- Début Header -->
+    <header class="header">
+        <div class="container-fluid main">
+            <div class="row">
+                <!-- Début Navbar -->
+                <nav class="navbar navbar-expand-lg align-items-center d-flex navbar-light">
+                    <div class="container-fluid">
+                        <!-- Logo afpa -->
+                        <a class="navbar-brand" href="index.html"><img class="logo-afpa"
+                                src="./assets/img/afpa-logo.jfif" alt="logo du site"></a>
+                        <!-- Bouton rechercher pour petits écrans -->
+                        <div class="d-flex">
+                            <a class="nav-link loupe2" href=""><i class="fa-solid loupe fa-magnifying-glass"></i>
+                            </a>
+                            <!-- Bouton menu liens de navigations pour petits écrans -->
+                            <button class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <!-- Liste des liens de navigations -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="formation.html">Formation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="temoignage.html">Témoignages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="references.html">Nos références</a>
+                                </li>
+                                <div class="bar-container">
+                                    <span class="bar"></span>
+                                </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="form.html">Nous contactez</a>
+                                </li>
+                            </ul>
+                            <!-- Bouton rechercher -->
+                            <a class="nav-link" href=""><i class="fa-solid loupe fa-magnifying-glass"></i>
+                            </a>
+                            <!-- Bouton se connecter -->
+                            <form class="d-flex">
+                                <button class="btn btn-outline-success">Se connecter</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- La side-bar de navigation pour petits écrans -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- On retrouve le même logo -->
+                            <a class="navbar-brand" href="index.html"><img class="logo-afpa-mobile"
+                                    src="./assets/img/afpa-logo.jfif" width="100px" height="41px" alt=""></a>
+                            <!-- Bouton pour fermer la sidebar -->
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- On retrouve les liens de la navbar -->
+                        <div class="modal-body">
+                            <div class="modal-line">
+                                <a href="formation.html">Formations</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="temoignage.html">Témoignages</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="references.html">Nos références</a>
+                            </div>
+                            <div class="modal-line">
+                                <a href="form.html">Nous contactez</a>
+                            </div>
+                            <!-- Ainsi que le bouton pour se connecter -->
+                            <div class="modal-line">
+                                <a href="">Se connecter</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Fin du header -->
+
+    <!-- Début du main (contenu principale de la page) -->
+    
+    <main class="form-container container-fluid">
+        <h4 class="mt-5 d-block form-title text-center">Afin de pouvoir apporter une réponse de qualité aux requêtes
+            adressées par le biais du formulaire de contact nous devons obtenir les informations suivantes auprès du
+            soumissionnaire :</h4>
+        <form class="form-form" action="">
+            <div class="row form-row">
+                <div class="col-md-6 form-left">
+                    <div class="form-group">
+                        <div class="email">
+                        <label for="name">Adresse email <span class="asterisk">*</span></label>
+                        <input type="text" class="form-control" id="name" value="">
+                        </div>
+
+                        <div class="region-select mt-4">
+                        <label for="region">Région d’origine</span></label>
+                        <select class="form-select" aria-label="Default select example" id="region">
+                            <option selected>-</option>
+                            <option value="1">Nord</option>
+                            <option value="2">Picardie</option>
+                            <option value="3">Ile-de-france</option>
+                        </select>
+                        </div>
+
+                        <div class="telephone mt-4">
+                        <label for="telephone">Telephone<span class="asterisk"> *</span></label>
+                        <input type="text" class="form-control" id="telephone" value="">
+                        </div>
+
+                        <div class="nom mt-4">
+                            <label for="nom">Nom<span class="asterisk"> *</span></label>
+                            <input type="text" class="form-control" id="nom" value="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 form-right">
+                 <div class="check-group">
+                    <div class="situation">
+                        <label for="situation">Situation</label>
+                        <div class="form-check mt-1" id="situation">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Demandeur d’emplois
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Salarié en transition professionnelle
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Autre
+                            </label>
+                          </div>
+                    </div>
+                    <div class="apprentissage mt-2">
+                        <label for="c-formation">Apprentissage privilégié</label>
+                        <div class="form-check mt-1" id="c-formation">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                En centre de formation (présentiel)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                100 % à distance
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault6">
+                            <label class="form-check-label" for="flexRadioDefault6">
+                                En contrat d'alternance avec l'entreprise
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault7">
+                            <label class="form-check-label" for="flexRadioDefault7">
+                                Sans préférence
+                            </label>
+                          </div>
+                          <div class="textarea mt-2">
+                            <label for="name">Description <span class="asterisk">*</span></label>
+                            <input type="text" style="height: 2.9rem; width: 19rem;" class="form-control" id="name" value="">
+                            </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 mt-4">
+                <button class="btn btn-success" type="submit">Envoyer</button>
+              </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
